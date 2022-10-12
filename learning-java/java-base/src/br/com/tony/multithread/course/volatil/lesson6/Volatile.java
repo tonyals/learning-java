@@ -1,4 +1,4 @@
-package br.com.tony.multithread.course.lesson6;
+package br.com.tony.multithread.course.volatil.lesson6;
 
 public class Volatile {
     private static volatile int number = 0;

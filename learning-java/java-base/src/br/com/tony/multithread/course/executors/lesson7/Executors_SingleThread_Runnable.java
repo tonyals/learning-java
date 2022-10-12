@@ -1,4 +1,4 @@
-package br.com.tony.multithread.course.lesson7;
+package br.com.tony.multithread.course.executors.lesson7;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

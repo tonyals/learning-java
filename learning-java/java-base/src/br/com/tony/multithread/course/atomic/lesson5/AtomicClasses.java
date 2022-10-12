@@ -1,4 +1,4 @@
-package br.com.tony.multithread.course.lesson5;
+package br.com.tony.multithread.course.atomic.lesson5;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;

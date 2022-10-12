@@ -1,4 +1,4 @@
-package br.com.tony.multithread.course.lesson3;
+package br.com.tony.multithread.course.synchronize.lesson3;
 
 import java.util.ArrayList;
 import java.util.Collections;

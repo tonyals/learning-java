@@ -1,4 +1,4 @@
-package br.com.tony.multithread.course.lesson4;
+package br.com.tony.multithread.course.collections.lesson4;
 
 import java.util.List;
 import java.util.Map;

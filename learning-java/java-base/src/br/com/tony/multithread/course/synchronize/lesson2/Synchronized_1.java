@@ -1,4 +1,4 @@
-package br.com.tony.multithread.course.lesson2;
+package br.com.tony.multithread.course.synchronize.lesson2;
 
 /*
  * Synchronized

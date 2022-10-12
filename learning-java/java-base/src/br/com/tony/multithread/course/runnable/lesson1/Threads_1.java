@@ -1,4 +1,4 @@
-package br.com.tony.multithread.course.lesson1;
+package br.com.tony.multithread.course.runnable.lesson1;
 
 
 class MyRunnable implements Runnable {
