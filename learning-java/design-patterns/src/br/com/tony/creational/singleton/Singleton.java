@@ -2,30 +2,66 @@ package br.com.tony.creational.singleton;
 
 import java.util.Objects;
 
-/**
- * Garante que somente uma instância da classe estará disponível para uso em todo o sistema
- * como se fosse uma variável global.
- * Útil para acesso a banco de dados, interface gráfica etc
- * */
-class SingletonImpl {
-    private static SingletonImpl instance;
-    private SingletonImpl(){}
 
-    public static SingletonImpl getInstance() {
-        if (Objects.isNull(instance)) {
-            instance = new SingletonImpl();
+class SingletonEagerImpl {
+    private static final SingletonEagerImpl eagerInstance = new SingletonEagerImpl();
+
+    private SingletonEagerImpl() {}
+
+    public static SingletonEagerImpl getEagerInstance() {
+        return eagerInstance;
+    }
+}
+
+
+class SingletonLazyImpl {
+    private static SingletonLazyImpl lazyInstance;
+    private SingletonLazyImpl(){}
+
+    public static SingletonLazyImpl getLazyInstance() {
+        if (Objects.isNull(lazyInstance)) {
+            lazyInstance = new SingletonLazyImpl();
         }
-        return instance;
+        return lazyInstance;
+    }
+}
+
+class SingletonThreadSafeImpl {
+    private static SingletonThreadSafeImpl threadSafeInstance;
+
+    private SingletonThreadSafeImpl(){}
+
+    public static SingletonThreadSafeImpl getThreadSafeInstance() {
+        synchronized (SingletonThreadSafeImpl.class) {
+            if (Objects.isNull(threadSafeInstance)) {
+                threadSafeInstance = new SingletonThreadSafeImpl();
+            }
+        }
+        return threadSafeInstance;
     }
 }
 
 public class Singleton {
     public static void main(String[] args) {
-        var singletonOne = SingletonImpl.getInstance();
-        var singletonTwo = SingletonImpl.getInstance();
-        var singletonThree = SingletonImpl.getInstance();
+        var eagerInstanceOne = SingletonEagerImpl.getEagerInstance();
+        var eagerInstanceTwo = SingletonEagerImpl.getEagerInstance();
 
-        System.out.println(singletonOne.equals(singletonTwo));
-        System.out.println(singletonTwo.equals(singletonThree));
+        System.out.println("Eager Instance");
+        System.out.println(eagerInstanceOne);
+        System.out.println(eagerInstanceTwo);
+
+        var lazyInstanceOne = SingletonLazyImpl.getLazyInstance();
+        var lazyInstanceTwo = SingletonLazyImpl.getLazyInstance();
+
+        System.out.println("Lazy Instance");
+        System.out.println(lazyInstanceOne);
+        System.out.println(lazyInstanceTwo);
+
+        var threadSafeInstanceOne = SingletonThreadSafeImpl.getThreadSafeInstance();
+        var threadSafeInstanceTwo = SingletonThreadSafeImpl.getThreadSafeInstance();
+
+        System.out.println("Thread Safe Instance");
+        System.out.println(threadSafeInstanceOne);
+        System.out.println(threadSafeInstanceTwo);
     }
 }
