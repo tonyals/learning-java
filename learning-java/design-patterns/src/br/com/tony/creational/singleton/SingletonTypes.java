@@ -41,7 +41,7 @@ class SingletonThreadSafeImpl {
     }
 }
 
-public class Singleton {
+public class SingletonTypes {
     public static void main(String[] args) {
         var eagerInstanceOne = SingletonEagerImpl.getEagerInstance();
         var eagerInstanceTwo = SingletonEagerImpl.getEagerInstance();
