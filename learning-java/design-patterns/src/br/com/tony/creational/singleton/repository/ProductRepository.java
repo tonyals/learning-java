@@ -1,4 +1,6 @@
-package br.com.tony.creational.singleton;
+package br.com.tony.creational.singleton.repository;
+
+import br.com.tony.creational.singleton.DatabaseConnSingleton;
 
 public class ProductRepository {
     private final DatabaseConnSingleton connSingleton;
