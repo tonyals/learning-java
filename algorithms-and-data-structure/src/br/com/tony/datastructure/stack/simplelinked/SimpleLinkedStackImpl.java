@@ -1,7 +1,7 @@
-package br.com.tony.stack.simplelinked;
+package br.com.tony.datastructure.stack.simplelinked;
 
-import br.com.tony.stack.IStack;
-import br.com.tony.stack.exceptions.EmptyStackError;
+import br.com.tony.datastructure.stack.IStack;
+import br.com.tony.datastructure.stack.exceptions.EmptyStackError;
 
 public class SimpleLinkedStackImpl<E> implements IStack<E> {
     private Node<E> top;

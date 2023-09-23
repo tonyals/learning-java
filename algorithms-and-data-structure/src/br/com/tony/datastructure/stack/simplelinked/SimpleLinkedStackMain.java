@@ -1,4 +1,4 @@
-package br.com.tony.stack.simplelinked;
+package br.com.tony.datastructure.stack.simplelinked;
 
 public class SimpleLinkedStackMain {
     public static void main(String[] args) {
