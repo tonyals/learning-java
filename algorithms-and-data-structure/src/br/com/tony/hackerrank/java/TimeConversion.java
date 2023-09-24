@@ -1,4 +1,4 @@
-package br.com.tony.hackerrank;
+package br.com.tony.hackerrank.java;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
