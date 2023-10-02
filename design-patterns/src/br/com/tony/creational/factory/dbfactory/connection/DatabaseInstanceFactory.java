@@ -1,6 +1,6 @@
-package br.com.tony.creational.factory.connection;
+package br.com.tony.creational.factory.dbfactory.connection;
 
-import br.com.tony.creational.factory.dto.DBInstanceType;
+import br.com.tony.creational.factory.dbfactory.dto.DBInstanceType;
 
 public class DatabaseInstanceFactory {
     public DatabaseInstance getDatabaseInstance(DBInstanceType dbInstanceType) {

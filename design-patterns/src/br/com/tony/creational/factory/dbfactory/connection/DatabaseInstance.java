@@ -1,4 +1,4 @@
-package br.com.tony.creational.factory.connection;
+package br.com.tony.creational.factory.dbfactory.connection;
 
 public interface DatabaseInstance {
     String getConnection();

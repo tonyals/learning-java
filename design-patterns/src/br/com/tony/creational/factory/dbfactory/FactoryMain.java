@@ -1,7 +1,7 @@
-package br.com.tony.creational.factory;
+package br.com.tony.creational.factory.dbfactory;
 
-import br.com.tony.creational.factory.connection.DatabaseInstanceFactory;
-import br.com.tony.creational.factory.dto.DBInstanceType;
+import br.com.tony.creational.factory.dbfactory.connection.DatabaseInstanceFactory;
+import br.com.tony.creational.factory.dbfactory.dto.DBInstanceType;
 
 public class FactoryMain {
     public static void main(String[] args) {
