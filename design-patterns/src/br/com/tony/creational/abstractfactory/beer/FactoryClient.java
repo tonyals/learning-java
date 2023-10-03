@@ -1,6 +1,6 @@
-package br.com.tony.creational.abstractfactory;
+package br.com.tony.creational.abstractfactory.beer;
 
-import br.com.tony.creational.abstractfactory.beverage.Beverage;
+import br.com.tony.creational.abstractfactory.beer.beverage.Beverage;
 
 public class FactoryClient {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package br.com.tony.creational.abstractfactory.beverage;
+package br.com.tony.creational.abstractfactory.beer.beverage;
 
-public class Water implements Beverage {
+public class Wine implements Beverage {
     @Override
     public String drink() {
         System.out.println(this.getClass().getName());

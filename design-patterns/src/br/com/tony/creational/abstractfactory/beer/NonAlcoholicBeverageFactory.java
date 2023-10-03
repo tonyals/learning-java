@@ -1,6 +1,6 @@
-package br.com.tony.creational.abstractfactory;
+package br.com.tony.creational.abstractfactory.beer;
 
-import br.com.tony.creational.abstractfactory.beverage.*;
+import br.com.tony.creational.abstractfactory.beer.beverage.*;
 
 public class NonAlcoholicBeverageFactory implements AbstractBeverageFactory {
     @Override

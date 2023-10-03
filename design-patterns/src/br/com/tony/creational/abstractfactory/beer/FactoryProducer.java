@@ -1,7 +1,10 @@
-package br.com.tony.creational.abstractfactory;
+package br.com.tony.creational.abstractfactory.beer;
 
 public class FactoryProducer {
-    public static AbstractBeverageFactory getBeverageFactory(Boolean isAlcoholic) {
+
+    private FactoryProducer() {}
+
+    public static AbstractBeverageFactory getBeverageFactory(boolean isAlcoholic) {
         if (isAlcoholic) {
             return new AlcoholicBeverageFactory();
         }

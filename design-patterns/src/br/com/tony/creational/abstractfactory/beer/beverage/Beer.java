@@ -1,4 +1,4 @@
-package br.com.tony.creational.abstractfactory.beverage;
+package br.com.tony.creational.abstractfactory.beer.beverage;
 
 public class Beer implements Beverage {
     @Override
